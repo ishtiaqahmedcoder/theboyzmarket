@@ -1,0 +1,10 @@
+*
+!.gitignore
+!hero/
+!hero/**
+!categories/
+!categories/**
+!products/
+!products/**
+!auth/
+!auth/**
