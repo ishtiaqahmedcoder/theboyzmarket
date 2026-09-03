@@ -80,14 +80,27 @@
     @endif
 
     <!-- Promo Banner -->
-    <section class="bg-black">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 text-center">
-            <h2 class="text-white text-2xl sm:text-3xl font-extrabold">Ordering Made Easy</h2>
-            <p class="text-gray-400 mt-3 max-w-xl mx-auto">Add items to your cart, complete checkout, and confirm your order directly on WhatsApp. No online payment required.</p>
-            @php $promoWa = \App\Models\Setting::get('whatsapp_number'); @endphp
-            <a href="https://wa.me/{{ $promoWa }}" target="_blank" class="mt-6 inline-flex items-center gap-2 bg-green-500 text-white font-semibold px-8 py-3 rounded-full hover:bg-green-600">
-                Chat on WhatsApp
-            </a>
+    <section class="bg-black relative overflow-hidden">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-4">
+            <div class="hidden lg:block relative h-full min-h-[420px]">
+                <img src="{{ asset('storage/promo/shopping-2.jpg') }}" alt="Fast order handling" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+                <div class="absolute inset-0 bg-black/50"></div>
+            </div>
+
+            <div class="lg:col-span-2 px-6 sm:px-10 py-16 text-center flex flex-col items-center justify-center">
+                <p class="text-white/60 text-xs font-semibold uppercase tracking-[0.2em] mb-3">Simple. Fast. Reliable.</p>
+                <h2 class="text-white text-3xl sm:text-4xl font-extrabold">Ordering Made Easy</h2>
+                <p class="text-gray-400 mt-3 max-w-md">Add items to your cart, complete checkout, and confirm your order directly on WhatsApp. No online payment required.</p>
+                @php $promoWa = \App\Models\Setting::get('whatsapp_number'); @endphp
+                <a href="https://wa.me/{{ $promoWa }}" target="_blank" class="mt-6 inline-flex items-center gap-2 bg-green-500 text-white font-semibold px-8 py-3 rounded-full hover:bg-green-600">
+                    Chat on WhatsApp
+                </a>
+            </div>
+
+            <div class="hidden lg:block relative h-full min-h-[420px]">
+                <img src="{{ asset('storage/promo/shopping-1.jpg') }}" alt="Order delivered to your door" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+                <div class="absolute inset-0 bg-black/50"></div>
+            </div>
         </div>
     </section>
 
