@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources;
 
+use App\Filament\Exports\OrderExporter;
 use App\Filament\Resources\OrderResource\Pages;
 use App\Filament\Resources\OrderResource\RelationManagers;
 use App\Models\Order;
@@ -113,9 +114,21 @@ class OrderResource extends Resource
                         'cancelled' => 'Cancelled',
                     ]),
             ])
+            ->headerActions([
+                Tables\Actions\ExportAction::make()
+                    ->exporter(OrderExporter::class)
+                    ->label('Export CSV'),
+            ])
             ->actions([
                 Tables\Actions\ViewAction::make(),
                 Tables\Actions\EditAction::make(),
+            ])
+            ->bulkActions([
+                Tables\Actions\BulkActionGroup::make([
+                    Tables\Actions\ExportBulkAction::make()
+                        ->exporter(OrderExporter::class)
+                        ->label('Export Selected'),
+                ]),
             ]);
     }
 

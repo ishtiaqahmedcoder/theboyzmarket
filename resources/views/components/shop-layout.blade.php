@@ -122,7 +122,42 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-7 w-7 fill-current"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.001 2C6.478 2 2 6.477 2 12c0 1.982.578 3.83 1.573 5.385L2 22l4.735-1.545A9.953 9.953 0 0012.001 22C17.523 22 22 17.523 22 12S17.523 2 12.001 2zm0 18.13a8.106 8.106 0 01-4.375-1.278l-.313-.187-2.812.918.929-2.74-.204-.323A8.106 8.106 0 013.87 12c0-4.484 3.647-8.13 8.131-8.13 4.484 0 8.13 3.646 8.13 8.13 0 4.484-3.646 8.13-8.13 8.13z"/></svg>
     </a>
 
-    <footer class="bg-black text-gray-300 mt-16">
+    <div class="bg-black border-t border-gray-800 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 grid grid-cols-2 sm:grid-cols-4 gap-6">
+            <div class="flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
+                <div>
+                    <p class="text-white text-sm font-semibold">Customer Support</p>
+                    <p class="text-gray-400 text-xs">Mon to Sat, 10am to 7pm</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" /></svg>
+                <div>
+                    <p class="text-white text-sm font-semibold">Easy Exchange</p>
+                    <p class="text-gray-400 text-xs">7 days easy exchange</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="{{ route('pages.track-order') }}" class="flex items-center gap-3 group">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" /></svg>
+                    <div>
+                        <p class="text-white text-sm font-semibold group-hover:underline">Track Your Order</p>
+                        <p class="text-gray-400 text-xs">Check order status anytime</p>
+                    </div>
+                </a>
+            </div>
+            <div class="flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                <div>
+                    <p class="text-white text-sm font-semibold">Nationwide Delivery</p>
+                    <p class="text-gray-400 text-xs">Delivering all over Pakistan</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-black text-gray-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 grid grid-cols-2 sm:grid-cols-4 gap-8 text-sm">
             <div class="col-span-2 sm:col-span-1">
                 <h3 class="text-white text-xl font-extrabold mb-3">{{ config('app.name') }}</h3>
